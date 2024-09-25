@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mkandmdLabelBox = new Label();
+            makeLabelBox = new Label();
             carListBox = new ListBox();
             yearLabel = new Label();
             textBoxYear = new TextBox();
@@ -38,7 +38,7 @@
             radioButtonBlack = new RadioButton();
             radioButtonRed = new RadioButton();
             radioButtonBlue = new RadioButton();
-            featuresGroupBox2 = new GroupBox();
+            featuresGroupBox = new GroupBox();
             checkBoxLane = new CheckBox();
             checkBoxSyrius = new CheckBox();
             checkBoxPower = new CheckBox();
@@ -47,18 +47,18 @@
             label2 = new Label();
             summaryLabel = new Label();
             colorGroupBox.SuspendLayout();
-            featuresGroupBox2.SuspendLayout();
+            featuresGroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // mkandmdLabelBox
+            // makeLabelBox
             // 
-            mkandmdLabelBox.AutoSize = true;
-            mkandmdLabelBox.Location = new Point(12, 43);
-            mkandmdLabelBox.Name = "mkandmdLabelBox";
-            mkandmdLabelBox.Size = new Size(146, 25);
-            mkandmdLabelBox.TabIndex = 0;
-            mkandmdLabelBox.Text = "&Make and Model";
-            mkandmdLabelBox.Click += label1_Click;
+            makeLabelBox.AutoSize = true;
+            makeLabelBox.Location = new Point(12, 43);
+            makeLabelBox.Name = "makeLabelBox";
+            makeLabelBox.Size = new Size(146, 25);
+            makeLabelBox.TabIndex = 0;
+            makeLabelBox.Text = "&Make and Model";
+            makeLabelBox.Click += label1_Click;
             // 
             // carListBox
             // 
@@ -79,7 +79,6 @@
             yearLabel.Size = new Size(44, 25);
             yearLabel.TabIndex = 2;
             yearLabel.Text = "&Year";
-            //yearLabel.Click += yearLabel_Click;
             // 
             // textBoxYear
             // 
@@ -126,7 +125,7 @@
             radioButtonBlack.AutoSize = true;
             radioButtonBlack.Location = new Point(22, 97);
             radioButtonBlack.Name = "radioButtonBlack";
-            radioButtonBlack.Size = new Size(83, 29);
+            radioButtonBlack.Size = new Size(77, 29);
             radioButtonBlack.TabIndex = 7;
             radioButtonBlack.TabStop = true;
             radioButtonBlack.Text = "Black";
@@ -137,36 +136,35 @@
             radioButtonRed.AutoSize = true;
             radioButtonRed.Location = new Point(22, 35);
             radioButtonRed.Name = "radioButtonRed";
-            radioButtonRed.Size = new Size(83, 29);
+            radioButtonRed.Size = new Size(67, 29);
             radioButtonRed.TabIndex = 5;
             radioButtonRed.TabStop = true;
             radioButtonRed.Text = "Red";
             radioButtonRed.UseVisualStyleBackColor = true;
-            //radioButtonRed.CheckedChanged += radioButtonRed_CheckedChanged;
             // 
             // radioButtonBlue
             // 
             radioButtonBlue.AutoSize = true;
             radioButtonBlue.Location = new Point(22, 64);
             radioButtonBlue.Name = "radioButtonBlue";
-            radioButtonBlue.Size = new Size(83, 29);
+            radioButtonBlue.Size = new Size(70, 29);
             radioButtonBlue.TabIndex = 6;
             radioButtonBlue.TabStop = true;
             radioButtonBlue.Text = "Blue";
             radioButtonBlue.UseVisualStyleBackColor = true;
             // 
-            // featuresGroupBox2
+            // featuresGroupBox
             // 
-            featuresGroupBox2.Controls.Add(checkBoxLane);
-            featuresGroupBox2.Controls.Add(checkBoxSyrius);
-            featuresGroupBox2.Controls.Add(checkBoxPower);
-            featuresGroupBox2.Controls.Add(checkBoxAC);
-            featuresGroupBox2.Location = new Point(699, 53);
-            featuresGroupBox2.Name = "featuresGroupBox2";
-            featuresGroupBox2.Size = new Size(252, 192);
-            featuresGroupBox2.TabIndex = 9;
-            featuresGroupBox2.TabStop = false;
-            featuresGroupBox2.Text = "&Features";
+            featuresGroupBox.Controls.Add(checkBoxLane);
+            featuresGroupBox.Controls.Add(checkBoxSyrius);
+            featuresGroupBox.Controls.Add(checkBoxPower);
+            featuresGroupBox.Controls.Add(checkBoxAC);
+            featuresGroupBox.Location = new Point(699, 53);
+            featuresGroupBox.Name = "featuresGroupBox";
+            featuresGroupBox.Size = new Size(252, 192);
+            featuresGroupBox.TabIndex = 9;
+            featuresGroupBox.TabStop = false;
+            featuresGroupBox.Text = "&Features";
             // 
             // checkBoxLane
             // 
@@ -243,26 +241,26 @@
             Controls.Add(summaryLabel);
             Controls.Add(label2);
             Controls.Add(purchaseButton);
-            Controls.Add(featuresGroupBox2);
+            Controls.Add(featuresGroupBox);
             Controls.Add(colorGroupBox);
             Controls.Add(label3);
             Controls.Add(textBoxYear);
             Controls.Add(yearLabel);
             Controls.Add(carListBox);
-            Controls.Add(mkandmdLabelBox);
+            Controls.Add(makeLabelBox);
             Name = "Form1";
             Text = "Assignment 2";
             colorGroupBox.ResumeLayout(false);
             colorGroupBox.PerformLayout();
-            featuresGroupBox2.ResumeLayout(false);
-            featuresGroupBox2.PerformLayout();
+            featuresGroupBox.ResumeLayout(false);
+            featuresGroupBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label mkandmdLabelBox;
+        private Label makeLabelBox;
         private ListBox carListBox;
         private Label yearLabel;
         private TextBox textBoxYear;
@@ -272,7 +270,7 @@
         private RadioButton radioButtonWhite;
         private RadioButton radioButtonBlack;
         private RadioButton radioButtonRed;
-        private GroupBox featuresGroupBox2;
+        private GroupBox featuresGroupBox;
         private Button purchaseButton;
         private Label label2;
         private Label summaryLabel;
